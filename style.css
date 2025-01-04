@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Odin";
+  src: url(Assets/Fonts/Norse-Bold.otf);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(243, 243, 243, 0.733);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.sidebar {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.554);
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.logo h1 {
+  font-family: "Odin";
+  font-size: 5rem;
+}
+
+.form-container {
+  font-size: 1.1rem;
+}
+.formControl-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.formHeader,
+.formFooter,
+.formControl-container {
+  padding: 1rem 3rem;
+}
+.formHeader {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin-top: 3rem;
+  line-height: 1.5rem;
+}
+
+.content {
+  margin-top: 2rem;
+}
+fieldset {
+  display: flex;
+  border: none;
+  gap: 3rem;
+}
+legend {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  gap: rem;
+}
+label {
+  font-size: 1rem;
+  color: #464646;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #e5e7eb;
+  border-color: #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+input:focus {
+  border: 1.5px solid #007bff;
+  box-shadow: 0 3px 5px rgba(25, 25, 25, 0.175);
+}
+input:valid {
+  border: 1.5px solid #749359;
+}
+input:invalid {
+  border: 1.5px solid #ff0033;
+}
+.submit-btn {
+  background-color: #596d48;
+  padding: inherit;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: max-content;
+  margin-bottom: 1rem;
+}
+.submit-btn:hover {
+  background-color: #435137;
+}
+.login {
+  color: #596d48;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+.login:hover {
+  text-decoration: underline;
+}
+.formFooter p {
+  font-size: 1rem;
+}
